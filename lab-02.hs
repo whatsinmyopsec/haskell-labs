@@ -6,7 +6,7 @@
 -- with this approximate value.
 
 pie :: Double
-pie = 3.1415926
+pie = 3.14
 
 --------------------------------------------------
 -- The formula for the area of a circle is
@@ -15,48 +15,51 @@ pie = 3.1415926
 -- in square centimeters of a circle with diameter
 -- 10 centimeters.
 
+aoc :: Double -> Double
+aoc r = pie * r ** 2
+
 areaCircleDiameter10 :: Double
-areaCircleDiameter10 = undefined
+areaCircleDiameter10 = aoc 5
 
 ----------------------------------------------
 -- Define an Integer that is the number of
 -- seconds in a week.
 
 secondsIn1Week :: Integer
-secondsIn1Week = undefined
+secondsIn1Week = 60 * 60 * 24 * 7
 
 ---------------------------------------------
 -- Define a List of Integers with the elements
 -- 1 to 10 in increasing order
 
 oneToTen :: [Integer]
-oneToTen = undefined
+oneToTen = [1 .. 10]
 
 ---------------------------------------------
 -- Define a string that is your first name
 
 yourFirstName :: String
-yourFirstName = undefined
+yourFirstName = "nah"
 
 ---------------------------------------------
 -- Define an Integer that is your age
 
 yourAge :: Integer
-yourAge = undefined
+yourAge = 90
 
 ---------------------------------------------
 -- Define a Bool truthvalue that is
 -- (yourAge is greater than 19) or (yourFirstName is "Tim")
 
 compareName :: Bool
-compareName = undefined
+compareName = yourAge > 19 || yourFirstName == "Tim"
 
 ---------------------------------------------
 -- Define an Double that is the average of
 -- 3.0, 7.42, and 24.8
 
 average :: Double
-average = undefined
+average = (3.0 + 7.42 + 24.8) / 3
 
 ---------------------------------------------
 -- Define an Integer that is the remainder
@@ -64,14 +67,14 @@ average = undefined
 -- "mod" operator. Try it out to see how it works
 
 remainder :: Integer
-remainder = undefined
+remainder = 14563 `mod` 22
 
 ---------------------------------------------
 -- Define a tuple that has your first name
 -- and your age.
 
 tuple :: (String, Integer)
-tuple = undefined
+tuple = (yourFirstName, yourAge)
 
 ---------------------------------------------
 -- Compute the difference between your
@@ -79,4 +82,4 @@ tuple = undefined
 -- 22 divided by 7.
 
 difference :: Double
-difference = undefined
+difference = 22 / 7 - pie

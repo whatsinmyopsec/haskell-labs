@@ -1,6 +1,6 @@
 sumdown :: Int -> Int
 
-sumdown
+sumdown n
 
 exponention :: Int -> Int -> Int
 
