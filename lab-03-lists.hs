@@ -1,15 +1,15 @@
 import Data.Char (toUpper)
 
 --[1,2,3,4,5,6]
-
+oneToSix :: [Int]
 --[10,20,30,40,50,60]
-
+tenToSixty :: [Int]
 --[(1,1),(2,2),(3,3),(4,4)]
-
+listOfTupleOfSame :: [(Int, Int)]
 --[(1,2),(2,3),(3,4),(4,5)]
-
+listOfNPlusOneTuple :: [(Int, Int)]
 --myConstFunc = [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1)]
-
+myConstFunc :: [(Int, Int)]
 isEven :: Integer -> Bool
 
 isEven n
